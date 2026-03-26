@@ -1,0 +1,135 @@
+:root {
+  --bg-color: #e9ecf1;
+  --card-bg: #f8f9fb;
+  --text-main: #1d1d35;
+  --text-muted: #6b6b83;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.main-container {
+  background-color: var(--card-bg);
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: var(--text-main);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: white;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-main);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.tag:hover {
+  border-color: #ddd;
+}
+
+/* Grid layout cho các Card */
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Card Style */
+.collection-card {
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Phần Gallery ảnh */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.main-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.thumb-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.thumb-row img {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer của Card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.card-footer h3 {
+  font-size: 16px;
+  color: var(--text-main);
+}
+
+.count {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.count i {
+  margin-right: 4px;
+  font-size: 12px;
+}
