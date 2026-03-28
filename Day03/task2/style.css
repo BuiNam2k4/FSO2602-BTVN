@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9; /* Màu nền hơi xanh xám nhạt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Lưới các thẻ công việc */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+/* Thẻ Job Card */
+.job-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Đổ bóng rất nhẹ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Style cho các Icon Box với Gradient */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-box i {
+    font-size: 20px;
+    color: #475569;
+}
+
+/* Màu Gradient cho từng loại icon */
+.icon-design { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); }
+.icon-eng { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
+.icon-ops { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
+.icon-people { background: linear-gradient(135deg, #ccfbf1, #99f6e4); }
+.icon-sales { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.icon-uni { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
+
+h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+/* Badge số lượng vị trí */
+.position-badge {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #f1f5f9;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Trạng thái Active (màu tối như hình Engineering) */
+.position-badge.active {
+    background-color: #1e2238;
+    color: #ffffff;
+    border-color: #1e2238;
+}
+
+/* Footer disclaimer */
+.disclaimer {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
