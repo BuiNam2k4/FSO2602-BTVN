@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f6fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-shape {
+  position: absolute;
+  width: 320px;
+  height: 640px;
+  background-color: #ecebfa;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.container {
+  width: 640px;
+  height: 464px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(42, 34, 80, 0.05);
+  padding: 45px 40px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-bar {
+  display: flex;
+  gap: 15px;
+  height: 48px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: #ffffff;
+}
+
+.search-box i {
+  color: #a0a0a0;
+  font-size: 16px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-box input::placeholder {
+  color: #9a9a9a;
+  font-weight: 500;
+}
+
+.map-btn {
+  background-color: #282250;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.map-btn:hover {
+  background-color: #1a1538;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 110px);
+  gap: 15px;
+}
+
+.category-item {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #282250;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.category-item:hover {
+  transform: translateY(-3px);
+}
+
+.category-item i {
+  font-size: 20px;
+}
+
+.category-item span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-furniture {
+  background-color: #ffecec;
+}
+.item-property {
+  background-color: #f7ecff;
+}
+.item-job {
+  background-color: #ecf0ff;
+}
+.item-travel {
+  background-color: #d7f9f3;
+}
+.item-boat {
+  background-color: #e2ffd4;
+}
+
+.item-mc {
+  background-color: #ffffff;
+  border: 1px solid #dbd5ec;
+  box-shadow: 0 10px 20px rgba(42, 34, 80, 0.08);
+}
+
+.item-economy {
+  background-color: #fff3c9;
+}
+.item-holiday {
+  background-color: #ffd9c9;
+}
